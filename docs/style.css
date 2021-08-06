@@ -1,0 +1,284 @@
+/*
+Initial design by:
+http://www.dripz.dk/
+
+Modified for
+http://www.linux-usb-daq.co.uk
+by Bernd Porr
+
+GPL
+*/
+
+
+
+
+
+body{
+ background-color: #fff;
+ position: absolute;
+ left: 50%; top: 15px;
+ width: 750px; height: auto;
+ margin: 0 0 0 -375px; padding: 0;
+ font: 1em arial, sans-serif;
+ color: #000;
+ background: url("bginv.gif");
+}
+
+
+
+
+
+
+
+ /* The header at the top. */
+#header{
+ position: absolute;
+ left: 0; top: 0;
+ width: 100%; height: 150px;
+ text-align: left;
+ z-index: 2;
+}
+
+ /* Styles the <H1> tag which is in the header div. */
+#header h1{
+ margin: 0 0 0 0; padding: 0 0 0 15px;
+ font: 3em georgia, sans-serif;
+ background-color: transparent;
+ z-index: 3;
+}
+
+
+
+
+ /* Styles the menu-holder. */
+#menu{
+ position: absolute;
+ left: 0; top: 150px;
+ width: 150px; height: auto;
+ padding: 1px 0 0 0;
+ background-color: #eee;
+ z-index: 1;
+}
+
+ /* Styles the list holder. */
+#menu ul{
+ margin: 0; padding: 0;
+ list-style: none;
+ font: 0.8em verdana, sans-serif;
+ background-color: #eee;
+}
+
+ /* Styles each "list-item" (or "button") with the same style. */
+#menu ul li{
+ display: block;
+ margin: 0 0 1px 0; padding: 3px 3px 3px 3px;
+ background-color: #fff;
+}
+
+ /* Gives the button a hover-effect. */
+#menu ul li:hover{
+ margin: 0 0 1px 0; padding: 2px 3px 2px 3px;
+ border-top: 1px #ccc solid; border-bottom: 1px #ccc solid;
+ background-color: #fff;
+}
+
+ /* Styles the link within the button. */
+#menu ul li a{
+ display: block;
+ color:  #007070;
+ text-decoration: none;
+}
+
+ /* Gives the link a hover-effect. */
+#menu ul li a:hover{
+ color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+ /* Styles and positions the content-holder. */
+#content{
+ position: absolute;
+ left: 150px; top: 150px;
+ width: auto; height: auto;
+ background-color: #fff;
+ border-left: 1px #ccc solid; border-top: 1px #ccc solid;
+ padding-bottom: 4px;
+ z-index: 0;
+}
+
+/* Styles the Header (<h1>). */
+#content h1{
+ display: block;
+ font: 1.6em arial, sans-serif;
+ color: #000;
+ margin: 1em 0 0 1em; padding: 0 0 .4em 0;
+ border-bottom: 1px #ddd solid;
+}
+
+/* Styles the Header (<h2>). */
+#content h2{
+ display: block;
+ font: 1.3em arial, sans-serif;
+ color: #000;
+ margin: 1em 0 0 1em; padding: 0 0 .4em 0;
+ /* border-bottom: 1px #ddd solid; */
+}
+
+/* Styles the Header (<h3>). */
+#content h3{
+ display: block;
+ font: 1em arial, sans-serif;
+ color: #000;
+ margin: 1em 0 0 1em; padding: 0 0 0 0;
+ /* border-bottom: 1px #ddd solid; */
+ text-align: center;
+ font-weight: bold;
+}
+
+
+/* Styles the Header (<h4>). For list headings.*/
+#content h4{
+ display: block;
+ font: 1em arial, sans-serif;
+ color: #000;
+ margin: 1em 0 0 0.25em; padding: 0 0 0 0;
+ /* border-bottom: 1px #ddd solid; */
+ text-align: left;
+ font-weight: bold;
+}
+
+
+/* Styles the Header (<h5>). */
+#content h5{
+ display: block;
+ font: 1.3em arial, sans-serif;
+ color: red;
+ margin: 1em 0 0 1em; padding: 0 0 .4em 0;
+ /* border-bottom: 1px #ddd solid; */
+}
+
+
+ /* Styles the paragraphs (<p>) in #content. */
+#content p{
+ display: block;
+ margin: .6em 1em 0 2.4em; padding: 0 0 .6em 0;
+ font: .8em arial, sans-serif;
+ text-align: justify;
+ text-indent: 0em;
+ line-height: 1.4em;
+}
+
+
+ /* Styles the table (<table>) in #content. */
+#content table{
+ margin: .6em 1em 0 2.4em; padding: 0 0 .6em 0;
+ font: .8em arial, sans-serif;
+}
+
+
+ /* Styles the image tag (<img />) in #content. */
+#content img{
+ margin: .6em 1em 0 0.5em;
+}
+
+ /* Styles the em tag in #content. */
+#content em{
+ text-decoration: none;
+ font-weight: bold;
+}
+
+ /* Styles the links within the #content. */
+#content a{
+ color: #007070;
+ text-decoration: none;
+}
+
+ /* Gives the links a hover effect. */
+#content a:hover{
+ color: black ;
+}
+
+
+
+ /* Styles the list holder. */
+#content ul{
+ margin: 0em 0 0 1em;
+ font: 0.8em arial, sans-serif;
+ list-style-image: url(bpoint_inv.png);
+}
+
+ /* Styles each "list-item" (or "button") with the same style.*/
+#content ul li{
+ list-style-image: url(bpoint_inv.png);
+}
+
+
+#content ul ul li{
+ /*list-style-image: url(bpoint_inv.png);*/
+}
+
+
+
+
+/* Styles the list holder. */
+#content ol{
+ margin: 0em 0em 1em 1em;
+ font: 0.8em arial, sans-serif;
+}
+
+
+
+
+
+
+
+
+
+
+
+ /* The footer. */
+#footer{
+ position: relative;
+ width: 100%; height: auto;
+ font: .5em verdana, sans-serif;
+ color: #ccc;
+ margin-top: 20px;
+ padding: 5px;
+ text-align: right;
+ border-top: 1px #ccc solid;
+}
+
+
+
+
+
+
+
+
+
+
+ /* Styles the <acronym> tag. */
+acronym{
+ border-bottom: 1px #000 dotted;
+ cursor: help;
+}
+
+
+
+
+
+
+
+
+
+
+

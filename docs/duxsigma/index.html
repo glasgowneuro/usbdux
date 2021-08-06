@@ -1,0 +1,131 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" >
+<head>
+ <meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
+ <meta name="author" content="Bernd Porr" />
+ <meta name="keywords" content="USB-DUX, linux, data acquisition" />
+ <meta name="description" content="USB-DUX homepage" />
+ <link rel="stylesheet" type="text/css" href="/includes/style.css" />
+<title>USB-DUX</title>
+</head>
+
+<body>
+
+<div id="header">
+<h1><img src="/logo3.gif" alt="USB-DUX logo" /></h1>
+</div>
+
+<div id="menu">
+<ul>
+  <li><a href="/duxsigma/">USB-DUX Sigma</a></li>
+  <li><a href="/usbdux/">USB-DUX D</a></li>
+  <li><a href="/duxfast/">USBDUX-fast</a></li>
+</ul>
+</div>
+
+<div id="content">
+
+<H1>USB DUX SIGMA: Technical Specification</H1>
+
+<h2>General</h2>
+<ul>
+<li>USB 2.0 only</li>
+
+<li>Comedi Driver: <a href="http://www.comedi.org">www.comedi.org</a>.</li>
+
+<li>Asynchronous sampling. This means that sampling can be performed in the background while the main application is doing something else (see comedi's "cmd").</li>
+
+<li>Power supply via the USB, no external supply required.</li>
+
+<li>Electrically isolated analogue input and output stage.</li>
+
+<li>Asynchronous acquisition holds for up to 16 USB devices (subject to resources/
+processor speed).</li>
+</ul>
+
+
+
+<h2>A/D converter</h2>
+<ul>
+
+<li>16 channels</li>
+
+<li>24 bit resolution</li>
+
+
+<li>Single ended</li>
+
+<li>Input range: -1.325V. . . +1.325V</li>
+
+<li>Input resistance: &gt; 1G</li>
+
+<li>Sampling rate (asynchronously in the background):<br />
+1 or 2 channels at once: 4kHz, 3..8 channels at once: 2kHz, 16 channels at once: 1kHz</li>
+</li>
+
+<li>The single analogue read is implemented as high preceision acquisition command (2ms acquisition time).</li>
+
+</ul>
+
+<h2>D/A converter</h2>
+<ul>
+
+<li>4 channels</li>
+
+
+<li>8 bit resolution</li>
+
+
+<li>Output range unipolar: 0. . . 2.5V</li>
+
+<li>Max output current: 1mA</li>
+
+<li>250us reaction time for one channel (2 USB frames)</li>
+
+<li>Asynchronous waveform generation with max 8kHz sampling rate</li>
+
+</ul>
+
+<h2>24 bit digital I/O</h2>
+<ul>
+
+<li>Response time for digital out: 125-250us (one-two USB frames)</li>
+<li>Response time for digital in: 500us (4 USB frames)</li>
+<li>Direction is programmable via comedi</li>
+<li>Four channel PWM option available for motor control</li>
+
+</ul>
+
+
+<h2>Connectivity: USBDUX-SIGMA</h2>
+<ul>
+
+<li>Female 44 pin high density D 
+connector electrically isolated for analogue I/O with +/-5V
+supply.</li>
+
+<li>Female 15 pin D connector for the digital I/O.</li>
+
+</ul>
+
+<h2>Physical Dimensions</h2>
+<ul>
+
+<li>Enclosure: 144x90x30mm</li>
+
+<li>Board: 136x80x15mm</li>
+</ul>
+
+
+<div id="footer">
+
+<a href="http://www.facebook.com/USBDUX"><img src="/images/fb.png"></a>
+
+  Based on a design made by Dripz from oswd.org.
+ </div>
+</div>
+
+</body>
+</html>
+

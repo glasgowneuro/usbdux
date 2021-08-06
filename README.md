@@ -14,7 +14,7 @@ with most distributions such as UBUNTU.
 
 ## Open source hard- and software
 
-Here on github you find both the EAGLE design files and software
+This github repo hosts both the EAGLE design files and software
 examples. No need to install any drivers as they are part of the
 Linux distributions.
 

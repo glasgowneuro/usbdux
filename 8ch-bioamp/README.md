@@ -11,3 +11,8 @@ This amplifier is being used in walking studies where it is directly worn with t
 ![alt tag](pcb_sc.png)
 
 The 8 bio-amplifiers operate at a gain of G=500 and are two stage amplifiers.
+
+Reflex Control of Robotic Gait Using Human Walking Data (2014) Catherine A. Macleod, Lin Meng, Bernard A. Conway, Bernd Porr
+Published: October 27, 2014, DOI: 10.1371/journal.pone.0109959
+
+https://www.youtube.com/channel/UCujRDNH3pcmzIhNqm0C48fg

@@ -2,7 +2,7 @@
 
 ![alt tag](docs/logo3.gif)
 
-USB-DUX is now open source. After 15 years, USB-DUX data acquisition boards are no longer being manufactured. Their design is now open source.
+USB-DUX is now open source. After 15 years, USB-DUX data acquisition boards are no longer being manufactured.
 
 ## The Original USB based DAQ for Linux
 
@@ -43,3 +43,8 @@ Up to 8kHz continous sampling rate. 8 input channels single ended,
 4 output channels and 8 digital I/O channels with 2 up/down counters
 and PWM. Single D-Type connector.
 
+## Nostalgia
+
+Original design of the company page:
+
+https://glasgowneuro.github.io/usbdux/

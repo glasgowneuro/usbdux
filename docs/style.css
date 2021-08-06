@@ -213,12 +213,12 @@ body{
 #content ul{
  margin: 0em 0 0 1em;
  font: 0.8em arial, sans-serif;
- list-style-image: url(bpoint_inv.png);
+ list-style-image: url("bpoint_inv.png");
 }
 
  /* Styles each "list-item" (or "button") with the same style.*/
 #content ul li{
- list-style-image: url(bpoint_inv.png);
+ list-style-image: url("bpoint_inv.png");
 }
 
 

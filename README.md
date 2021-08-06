@@ -2,6 +2,8 @@
 
 ![alt tag](docs/logo3.gif)
 
+USB-DUX is now open source. After 15 years, USB-DUX data acquisition boards are no longer being manufactured. Their design is now open source.
+
 ## The Original USB based DAQ for Linux
 
 The USB DUX is the perfect data acquisition unit for real-time monitoring
@@ -12,10 +14,9 @@ This means that it is easy to program and works well on embedded systems or
 desk top computers. The board is plug and play
 with most distributions such as UBUNTU.
 
-## Open source hard- and software
+## Drivers
 
-This github repo hosts both the EAGLE design files and software
-examples. No need to install any drivers as they are part of the
+No need to install any drivers as they are part of the
 Linux distributions.
 
 ## USBDUX-Sigma

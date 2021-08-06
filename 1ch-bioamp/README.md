@@ -7,3 +7,7 @@ The amplifier operates at a gain of either G=500 (preferred) or G=2000. If you h
 The PCB but it can be ordered from Beta Layout by sending them the .brd file. They can also fit the components. All components can be ordered from Farnell. Simply copy and paste the BOM into their "quick paste" order form.
 
 ![alt tag](eeg_open2.jpg)
+
+Used in:
+
+A proof of concept evaluation of the electroencephalophone as a discriminator between wakefulness and general anaesthesia. Glen, J., Porr, B., Hamilton, R., Tait, L. (2013) British Journal of Anaesthesia.

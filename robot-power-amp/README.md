@@ -14,4 +14,3 @@ This amplifier has been used in different robotics applications. It's output can
 ![alt tag](poweramp.png)
 
 The EAGLE design files are in this subdir.
-

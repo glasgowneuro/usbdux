@@ -1,5 +1,7 @@
 # USB-DUX
 
+![alt tag](docs/logo3.gif)
+
 ## The Original USB based DAQ for Linux
 
 The USB DUX is the perfect data acquisition unit for real-time monitoring

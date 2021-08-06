@@ -1,0 +1,13 @@
+This is a demo program for the USBDUXfast board. It reads 1000 samples
+at a rate if 60kHz from all 16 channels and plots the result with
+gnuplot.
+
+Requirements:
+- comedilib with development libraries / c header files
+- gnuplot
+
+Compilation:
+just type "make"
+
+Running:
+sh test.sh

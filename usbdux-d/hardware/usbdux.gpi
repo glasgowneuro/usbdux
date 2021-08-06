@@ -1,0 +1,49 @@
+Photoplotter Info File: /home/bp1/eagle/ez_control-1.0e_smd-1.0/ez_control.gpi
+
+ Date              :  1/25/2011 13:05:28 
+ Plotfile          : /home/bp1/eagle/ez_control-1.0e_smd-1.0/ez_control.sts
+ Apertures         : generated: 
+ Device            : Gerber photoplotter with RS-274-X aperture generation
+
+Parameter settings:
+
+ Emulate Apertures : no
+ Emulate Thermal   : no
+ Emulate Annulus   : no
+ Tolerance Draw  + :  0.00 %
+ Tolerance Draw  - :  0.00 %
+ Tolerance Flash + :  0.00 %
+ Tolerance Flash - :  0.00 %
+ Rotate            : no
+ Mirror            : yes
+ Optimize          : yes
+ Auto fit          : yes
+ OffsetX           : 0inch
+ OffsetY           : 0inch
+
+Plotfile Info:
+
+ Coordinate Format : 2.4
+ Coordinate Units  : Inch
+ Data Mode         : Absolute
+ Zero Suppression  : None
+ End Of Block      : *
+
+Apertures used:
+
+ Code     Shape     Size                  used
+
+ D10      round     0.2620inch               4
+ D11      round     0.1080inch               6
+ D12      oval      0.1200inch x 0.0640inch     2
+ D13      oval      0.0600inch x 0.1120inch     5
+ D14      octagon   0.0680inch              84
+ D15      round     0.2080inch               4
+ D16      octagon   0.0654inch               4
+ D17      round     0.1480inch               2
+ D18      oval      0.0680inch x 0.1280inch     3
+ D19      round     0.0480inch              27
+ D20      square    0.0480inch              61
+ D21      square    0.0480inch              19
+ D22      octagon   0.0480inch              10
+

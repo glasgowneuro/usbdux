@@ -1,0 +1,58 @@
+USBDUX / www.linux-usb-daq.co.uk
+
+Demo files for USBDUX.
+
+These are example files for:
+- single channel acquisition (inp)
+- single channel output (outp)
+- asynchronous analogue acquisition (cmd)
+- digital output (dout)
+- PWM on digital out
+which have been tested with the USBDUX board and serve
+as programming examples for this board.
+
+To compile you need to have "libcomedi-dev" installed. Just select
+it in your favourite package manager and install it.
+To run the programs you need have "libcomedi" installed.
+The kernel drivers should come automatically with the distribution,
+for example UBUNTU lucid or later and there is no need to install them.
+
+To compile just type "make".
+
+Detailed description:
+
+inp <channel>
+-------------
+reads the value from the analogue channel <channel> and prints it in raw
+and physical units.
+
+outp <channel> <value>
+----------------------
+sets the value of the analoge channel <channel> to <value>.
+The values are in raw units from 0 to maxdata
+
+outp_loop.sh
+------------
+is an endless loop which switches the anologue channels 0 to 3
+between 0 and 4095
+
+cmd
+---
+reads 1000 samples at a sampling rate of 1kHz from the analoge
+channels 0 - 7 and outputs them to standard out. Additional information
+is sent to stderr. By writing "cmd > mydata.dat" 1000 samples
+are written to the file mydata at a sampling rate of 1kHz.
+
+cmd_gnuplot.sh
+--------------
+Uses cmd from above and then plots the data in gnuplot.
+The x version of gnuplot needs to be installed.
+
+info
+----
+Info about the USBDUX board as reported by the driver. Useful
+to find out about the range information, maxdata etc.
+
+
+Bernd Porr
+tech@linux-usb-daq.co.uk

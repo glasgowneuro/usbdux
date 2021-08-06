@@ -1,0 +1,59 @@
+These are test-programs for the USBDUXsigma board. They also show
+you how to operate the API.
+
+Synchronous analogue in:
+./inp <channel> 
+reads one ananlogue channel at its max resolution
+
+sh test_inp.sh 
+is an endless loop calling "inp 1"
+
+
+Synchronous analogue out:
+./outp <channel> <value>
+changes the voltage at <channel> to <value>
+
+sh test_analog.sh
+changes all 4 analogue channels in a loop
+
+
+Asynchronous analogue in:
+./cmd 
+samples 1000 samples at a rate of 1kHz and writes them to stdout
+sh test_cmd.sh
+samples 1000 samples from all 16 channels and plots them with gnuplot
+
+
+Digital in:
+./din <channel>
+reads one digital channel
+sh test_di.sh
+reads all channels in a loop
+
+
+Digital out:
+./dout <channel> <value>
+sets the bitvalue of one digital channel
+sh test_do.sh
+changes the digital channels in an endless loop
+
+
+PWM:
+./pwm
+Controls PWM from the digital I/O ports. Commandline parameters:
+-on/-off : Turn PWM on/off
+-freq \t : Adjust frequency
+-duty \t : Adjust duty cycle
+
+
+
+Requirements:
+- comedilib with development libraries / c header files
+- gnuplot
+
+Compilation:
+just type "make"
+
+Running:
+sh test_inp.sh
+sh test_output.sh

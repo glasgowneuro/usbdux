@@ -1,5 +1,7 @@
 # USB DUX SIGMA: Technical Specification
 
+![alt tag](../docs/sigmaduxsm.jpg)
+
 ## General
 
  - USB 2.0 only

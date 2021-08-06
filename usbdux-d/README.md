@@ -1,5 +1,7 @@
 # USBDUX-D
 
+![alt tag](../docs/Dtype.jpg)
+
 ## General
 
  - USB 1.1 and USB 2.0

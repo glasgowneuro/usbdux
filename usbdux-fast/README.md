@@ -1,5 +1,7 @@
 # USB-DUXfast: Technical Specification
 
+![alt tag](../docs/fastduxsm.jpg)
+
 ## General
 
  - USB 2.0, only

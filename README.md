@@ -21,7 +21,7 @@ Linux distributions.
 
 ## USBDUX-Sigma
 
-![alt tag](docs/sigmaduxsm.jpg)
+[![alt tag](docs/sigmaduxsm.jpg)](https://github.com/glasgowneuro/usbdux/tree/main/usbdux-sigma)
 
 24 bit resolution over 16 channels. 24 bits digital I/O.
 4 D/A outputs. Electrical isolation of all analogue channels.
@@ -29,7 +29,7 @@ Linux distributions.
 
 ## USBDUX-FAST
 
-![alt tag](docs/fastduxsm.jpg)
+[![alt tag](docs/fastduxsm.jpg)](https://github.com/glasgowneuro/usbdux/tree/main/usbdux-fast)
 
 Up to 3MHz continous sampling rate. 16 Channels single ended.
 Single D-Type connector.
@@ -37,7 +37,7 @@ Single D-Type connector.
 
 ## USBDUX-D
 
-![alt tag](docs/Dtype.jpg)
+[![alt tag](docs/Dtype.jpg)](https://github.com/glasgowneuro/usbdux/tree/main/usbdux-d)
 
 Up to 8kHz continous sampling rate. 8 input channels single ended,
 4 output channels and 8 digital I/O channels with 2 up/down counters

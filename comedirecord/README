@@ -51,17 +51,5 @@ sudo cp comedirecord /usr/local/bin
 
 Have fun
 /Bernd Porr
------------------------------------------------------------
 
 comedirecord is free software. It's licensed under the GPL.
-BerndPorr@f2s.com
-http://www.linux-usb-daq.co.uk
------------------------------------------------------------
-
-A quick guide how to import the data into octave (MATLAB clone):
-
-1) load myname5.dat
-2) ecg=myname5(:,2);
-This loads the second column of the data set. The first one
-contains the time. Thus, in case you need the time:
-3) t=myname5(:,1);

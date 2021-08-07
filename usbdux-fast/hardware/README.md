@@ -1,4 +1,4 @@
-# USB-DUX Sigma design files
+# USB-DUX fast design files
 
 ![alt tag](topview.png)
 

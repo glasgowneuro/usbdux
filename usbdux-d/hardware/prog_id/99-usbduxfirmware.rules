@@ -1,0 +1,1 @@
+ACTION=="add", ATTRS{idVendor}=="04b4", ATTRS{idProduct}=="8613", RUN+="/sbin/fxload -2 -I /home/bp1/usb/vendor_id/prog_id.hex -v -D %N | logger"

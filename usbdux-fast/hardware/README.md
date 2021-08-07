@@ -1,6 +1,6 @@
 # USB-DUX Sigma design files
 
-![alt tag](top-view.png)
+![alt tag](topview.png)
 
 The design has been done with EAGLE.
 

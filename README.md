@@ -45,6 +45,6 @@ and PWM. Single D-Type connector.
 
 ## Nostalgia
 
-Original design of the company page:
+Original design of the company page (2003 - 2021):
 
 https://glasgowneuro.github.io/usbdux/

@@ -4,6 +4,9 @@
 
 USB-DUX is now open source. After 15 years, USB-DUX data acquisition boards are no longer being manufactured.
 
+Below are the design files which you can send to a prototyping service 
+for example European Circuits (https://european-circuits.co.uk/) here in Glasgow or Beta Layout.
+
 ## The Original USB based DAQ for Linux
 
 The USB DUX is the perfect data acquisition unit for real-time monitoring

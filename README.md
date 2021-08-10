@@ -51,3 +51,9 @@ and PWM. Single D-Type connector.
 Original design of the company page (2003 - 2021):
 
 https://glasgowneuro.github.io/usbdux/
+
+## Contact
+
+Bernd Porr <bernd@glasgowneuro.tech>
+
+Kevin Swingler <kms@cs.stir.ac.uk>

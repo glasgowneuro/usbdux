@@ -1,12 +1,15 @@
-Programs the vendor ID of the USB dux board into its EEPROM.
-------------------------------------------------------------
+Programs the vendor ID of the USB-DUX fast board into its EEPROM
+----------------------------------------------------------------
 
-Use this program only if you really know what you are doing.
+This needs to be done once so that the USB-DUX fast driver can
+auto-detect the board.
 
-Useage: fxload -2 prog_id.hex
+Prerequisite: 
+as31 (standard Ubuntu package)
 
-Without warranty.
+Build: 
+Just type "make".
 
-GNU public license
-
-(c) Bernd Porr
+Usage:
+fxload -2 prog_id.hex
+or add the "99-usbduxfirmware.rules" to "/etc/udev/rules.d/"

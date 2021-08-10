@@ -57,3 +57,5 @@ https://glasgowneuro.github.io/usbdux/
 Bernd Porr <bernd@glasgowneuro.tech>
 
 Kevin Swingler <kms@cs.stir.ac.uk>
+
+https://www.facebook.com/USBDUX

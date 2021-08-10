@@ -13,8 +13,9 @@ This amplifier has been used in different robotics applications. It's output can
 
 ![alt tag](poweramp.png)
 
-The EAGLE design files are in this subdir.
+## Reference
 
+The RunBot was (is?!) the fastest walking robot in the world:
 
 Geng T, Porr B, Wörgötter F. Fast Biped Walking with a Sensor-driven Neuronal Controller and Real-time
 Online Learning. The International Journal of Robotics Research. 2006;25(3):243-259. doi:10.1177/0278364906063822

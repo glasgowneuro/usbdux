@@ -6,7 +6,7 @@
 #include <stdio.h>
 #include <sys/ioctl.h>
 #include <stdlib.h>
-#include <linux/videodev.h>
+#include <libv4l1-videodev.h>
 #include <comedilib.h>
 #include <signal.h>
 #include <curses.h>

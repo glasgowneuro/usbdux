@@ -1,4 +1,4 @@
-LDLIBS= -lm /usr/local/lib/libcomedi.a -L./icolearning -licolearning
+LDLIBS= -lm -lcomedi icolearning/icolearning.o icolearning/trace.o -lncurses
 OPT= -g -march=native -Wall
 INCLUDES=-I./icolearning
 
@@ -9,7 +9,7 @@ main.o: main.cpp
 
 main: main.o
 	make -C icolearning
-	g++ -lncurses main.o -licolearning $(OPT) $(LDLIBS) -o main
+	g++ main.o $(OPT) $(LDLIBS) -o main
 	chmod a+x main
 
 clean:

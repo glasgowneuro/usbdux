@@ -11,7 +11,7 @@
 #include <signal.h>
 #include <curses.h>
 
-#include "icolearning/icolearning.h"
+#include "icolearning.h"
 
 #define LEARNING_RATE 0.00002
 

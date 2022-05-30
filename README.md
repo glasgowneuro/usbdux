@@ -22,6 +22,10 @@ with most distributions such as UBUNTU.
 No need to install any drivers as they are part of the
 Linux distributions.
 
+## Python support
+
+https://github.com/berndporr/pyusbdux
+
 ## USBDUX-Sigma
 
 [![alt tag](docs/sigmaduxsm.jpg)](https://github.com/glasgowneuro/usbdux/tree/main/usbdux-sigma)

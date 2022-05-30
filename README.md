@@ -24,7 +24,7 @@ Linux distributions.
 
 ## Python support
 
-https://github.com/berndporr/pyusbdux
+https://pypi.org/project/pyusbdux/
 
 ## USBDUX-Sigma
 

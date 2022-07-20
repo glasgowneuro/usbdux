@@ -22,6 +22,15 @@ with most distributions such as UBUNTU.
 No need to install any drivers as they are part of the
 Linux distributions.
 
+USB-DUX uses the *comedi* framework (http://www.comedi.org).
+Use the packages provided by your distro. Do *not* compile comedi from source.
+
+### Debian/Ubuntu packages:
+```
+apt install libcomedi-dev
+apt install libcomedi0
+```
+
 ## Python support
 
 https://pypi.org/project/pyusbdux/

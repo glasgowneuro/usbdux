@@ -101,7 +101,7 @@ Any error in comedi throws an exception in python.
 Example / demo programs
 =======================
 
-In the folder https://github.com/berndporr/pyusbdux/tree/master/examples are example
+In the folder https://github.com/glasgowneuro/usbdux/tree/main/pyusbdux/examples are example
 scripts which show you how to sample data from the analogue and digital ports.
 
 

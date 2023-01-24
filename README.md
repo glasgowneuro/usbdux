@@ -31,9 +31,27 @@ apt install libcomedi-dev
 apt install libcomedi0
 ```
 
+Check that you are in the group `iocard`. Open the groups file:
+
+```
+sudo nano /etc/group
+```
+
+and see if your username is added to the group `iocard`:
+
+```
+iocard:x:125:my_user_name
+```
+
 ## Python support
 
 https://pypi.org/project/pyusbdux/
+
+## Comedirecord
+
+Program to visualise data and record it to your harddrive.
+
+https://github.com/berndporr/comedirecord
 
 ## USBDUX-Sigma
 

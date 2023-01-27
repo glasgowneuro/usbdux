@@ -2,8 +2,11 @@
 #include <stdio.h>
 
 struct DUXCallback : CppUSBDUX::Callback {
-	virtual void hasSample(const std::array<float,N_CHANS> &data) {
-		printf("%f\n",data[0]);
+	virtual void hasSample(const std::vector<float> &data) {
+		for(auto &v:data) {
+			printf("%f\t",v);
+		}
+		printf("\n");
 	}
 };
 

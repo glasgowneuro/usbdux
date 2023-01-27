@@ -8,7 +8,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include <thread>	
-#include <array>
+#include <vector>
 #include <fcntl.h>
 #include <math.h>
 
@@ -25,7 +25,7 @@ public:
 	 * Abstract Callback which needs to be implemented by the main program
 	 **/
 	struct Callback{
-		virtual void hasSample(const std::array<float,N_CHANS> &data) = 0;
+		virtual void hasSample(const std::vector<float> &data) = 0;
 	};
 
 	/**
@@ -71,10 +71,6 @@ public:
 		
 		n_chan = n_channels;
 		freq = fs;
-		
-		for(int i=0;i<N_CHANS;i++) {
-			samples[i] = 0;
-		}
 		
 		subdevice = comedi_find_subdevice_by_type(dev,COMEDI_SUBD_AI,0);
 		
@@ -233,7 +229,7 @@ public:
 
 
 private:
-	int getSampleFromBuffer(float sample[N_CHANS]) {
+	int getSampleFromBuffer(std::vector<float>& sample) {
 		if (dev == NULL) throw errorDevNotOpen;
 		fd_set rdset;
 		FD_ZERO(&rdset);
@@ -268,21 +264,15 @@ private:
 	
 
 	void readWorker(Callback* cb) {
-		std::array<float,N_CHANS> sample;
+		std::vector<float> sample;
+		sample.resize(n_chan);
 		running = true;
 		while (running) {
-			float tmp[N_CHANS];
-			int n = getSampleFromBuffer(tmp);
-			if (n > 0) {
-				for(int i = 0; i < N_CHANS; i++) {
-					sample[i] = tmp[i];
-				}
-				//printf("%f\n",sample[0]);
-				cb->hasSample(sample);
-			}
+			int n = getSampleFromBuffer(sample);
 			if (n < 0) {
 				throw errorDisconnect;
 			}
+			cb->hasSample(sample);
 		}
 	}
 
@@ -296,17 +286,13 @@ private:
 	double freq = 0;
 	int bytes_per_sample = 0;
 	int subdev_flags = 0;
-	
 	char buffer[BUFSZ];
-	float samples[N_CHANS];
-	
 	unsigned int chanlist[N_CHANS];
 	comedi_range* range_info[N_CHANS];
 	lsampl_t maxdata[N_CHANS];
 	comedi_cmd cmd;
 	std::thread thr;
 	bool running = false;
-
 };
 
 #endif

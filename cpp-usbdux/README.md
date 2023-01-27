@@ -10,7 +10,7 @@ of the [USB-DUX sigma](https://github.com/glasgowneuro/usbdux).
 
 ```
 struct DUXCallback : CppUSBDUX::Callback {
-	virtual void hasSample(const std::array<float,N_CHANS> &data) {
+	virtual void hasSample(const std::vector<float> &data) {
 		/// Do something with "data" here!
 	}
 };
@@ -60,12 +60,12 @@ and then run
 ./print2screen_demo
 ```
 
-which prints the values of the 1st channel in Volt on the screen.
+which prints the values of the 1st 8 channels in Volt on the screen.
 You can pipe them into a text-file and plot them:
 
 ```
 ./print2screen_demo > /tmp/data.txt
-gnuplot> plot "/tmp/data.txt" w l
+gnuplot> plot "/tmp/data.txt" using 1 w l
 ```
 
 ![alt tag](data.png)

@@ -1,7 +1,7 @@
 # C++-USBDUX
 
-A simple header-only C++ library which provides
-a C++ callback interface for the analogue data acquisition
+A header-only C++ library which provides
+a C++ callback interface for the async analogue data acquisition
 of the [USB-DUX sigma](https://github.com/glasgowneuro/usbdux).
 
 ## How to use

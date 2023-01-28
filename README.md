@@ -46,6 +46,7 @@ iocard:x:125:my_user_name
 ## Python support
 
 https://pypi.org/project/pyusbdux/
+https://github.com/berndporr/pyusbdux
 
 ## C++ support (samples via callback)
 

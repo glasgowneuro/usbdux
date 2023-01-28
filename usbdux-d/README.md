@@ -4,7 +4,7 @@
 
 ## General
 
- - USB 1.1 and USB 2.0
+ - USB 1.1 and USB 2.0 (does _not_ work with USB-3.0 controllers or ehci controllers)
  - Comedi Driver: www.comedi.org.
  - Asynchronous sampling. This means that sampling can be performed in the background while the main application is doing something else (see comedi's "cmd").
  - Power supply via the USB, no external supply

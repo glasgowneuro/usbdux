@@ -47,6 +47,10 @@ iocard:x:125:my_user_name
 
 https://pypi.org/project/pyusbdux/
 
+## C++ support (comedi C++ callback wrapper)
+
+[C++-USB-DUX](<./cpp-usbdux>)
+
 ## Comedirecord
 
 Program to visualise data and record it to your harddrive.

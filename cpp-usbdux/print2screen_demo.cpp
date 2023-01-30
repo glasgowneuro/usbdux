@@ -17,4 +17,5 @@ int main (int,char**) {
 	usbdux.start(&cb,8,250);
 	getc(stdin);
 	usbdux.stop();
+	return 0;
 }

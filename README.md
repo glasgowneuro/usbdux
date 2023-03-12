@@ -25,7 +25,14 @@ Linux distributions.
 USB-DUX uses the *comedi* framework (http://www.comedi.org).
 Use the packages provided by your distro. Do *not* compile comedi from source.
 
-### Debian/Ubuntu packages:
+### Special case: Raspberry PI
+
+The Raspberry PI team has removed COMEDI ever since from the kernel and
+if you want to use the USB-DUX on a raspberry PI please follow the
+instructions here: https://github.com/glasgowneuro/comedi_raspberry_pi_bullseye
+
+
+## Debian/Ubuntu packages:
 ```
 apt install libcomedi-dev
 apt install libcomedi0

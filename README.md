@@ -34,8 +34,9 @@ instructions here: https://github.com/glasgowneuro/comedi_raspberry_pi_bullseye
 
 ## Debian/Ubuntu packages:
 ```
-apt install libcomedi-dev
-apt install libcomedi0
+sudo apt install libcomedi-dev
+sudo apt install libcomedi0
+sudo apt install firmware-linux-free
 ```
 
 Check that you are in the group `iocard`. Open the groups file:
@@ -68,13 +69,7 @@ if you see:
 [ 3506.066849] usbcore: registered new interface driver usbduxsigma
 ```
 
-and check that you are in the group `iocard`. Open the groups file:
-
-```
-sudo nano /etc/group
-```
-
-and see if your username is added to the group `iocard`:
+and check that you are in the group `iocard`:
 
 ```
 iocard:x:125:my_user_name

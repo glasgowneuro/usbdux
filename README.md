@@ -126,7 +126,7 @@ https://glasgowneuro.github.io/usbdux/
 
 ## Contact
 
-Bernd Porr <bernd@glasgowneuro.tech>
+Bernd Porr <bernd@glasgowneuro.com>
 
 Kevin Swingler <kms@cs.stir.ac.uk>
 
